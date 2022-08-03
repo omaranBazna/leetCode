@@ -67,6 +67,7 @@ var findRedundantConnection = function (edges) {
 function checkCycle(map, edge, visited) {
   ///we need to check if we can reach the node2 to node1 from another path(cycle)
   ///for every element of the maping node2 if already visited ignore
+  let elements = map[edge[1]];
   /// if not visited (if equal to node1 [not in the level of node2 first call]  return true)
   /// if not equal to node1 add to visited check the cycle for this element[recursive call ] before calling store temporary set
   ///for what already visited
