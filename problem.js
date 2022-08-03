@@ -59,3 +59,4 @@ let graph = {
 ///there is no other node to test //no other path the other node
 ///if the current is 4
 ///we have potential path at 3
+///3 have [2,4]
