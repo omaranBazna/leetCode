@@ -39,6 +39,19 @@ The given graph is connected.
 
 var findRedundantConnection = function (edges) {
   ///make a map where every element paired with of array immediate connected nodes
+  let map = {};
+  for (let edge of edges) {
+    if (!map.hasOwnProperty(edge[0])) {
+      map[edge[0]] = [edge[1]];
+    } else {
+      map[edge[0]].push(edge[1]);
+    }
+    if (!map.hasOwnProperty(edge[1])) {
+      map[edge[1]] = [edge[0]];
+    } else {
+      map[edge[1]].push(edge[0]);
+    }
+  }
   ///loop from end to start
   ///for each edge check if it is part of cycle return the edge
   ///for each edge initialize set of already visited nodes and add the node1 to the set
