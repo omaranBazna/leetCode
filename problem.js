@@ -73,8 +73,13 @@ function checkCycle(map,node1,node2,current, visited) {
         if(element==node1 && current !=node2){
             return true;
         }
+        let temporary=visited;
+        visited.add(element);
+        checkCycle(map,node1,node2,element,visited);
+        visited=temporary;
     }
   }
+  return false;
   /// if not visited (if equal to node1 [not in the level of node2 first call]  return true)
   /// if not equal to node1 add to visited check the cycle for this element[recursive call ] before calling store temporary set
   ///for what already visited
