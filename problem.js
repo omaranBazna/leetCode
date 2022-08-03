@@ -58,3 +58,4 @@ let graph = {
 ///if the current is 5
 ///there is no other node to test //no other path the other node
 ///if the current is 4
+///we have potential path at 3
