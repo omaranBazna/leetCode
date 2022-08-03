@@ -38,6 +38,7 @@ The given graph is connected.
  */
 
 var findRedundantConnection = function (edges) {
+  ///make a map where every element paired with of array immediate connected nodes
   ///loop from end to start
   ///for each edge check if it is part of cycle return the edge
 };
@@ -66,3 +67,4 @@ let graph = {
 ///we found 1
 
 ///continue
+///
