@@ -63,3 +63,4 @@ let graph = {
 ///4 has been visited ,so it is useful to check what has been visited
 ///2 have potential path
 ///1 and 3
+///we found 1
