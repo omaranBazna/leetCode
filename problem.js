@@ -31,3 +31,10 @@ There are no repeated edges.
 The given graph is connected.
 
 */
+
+/**
+ * @param {number[][]} edges
+ * @return {number[]}
+ */
+
+var findRedundantConnection = function (edges) {};
