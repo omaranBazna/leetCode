@@ -43,4 +43,5 @@ var findRedundantConnection = function (edges) {
 };
 function checkCycle(edges, edge) {
   ///check if can reach the second node from first node another way
+  ///check what everynode we can reach from this node
 }
