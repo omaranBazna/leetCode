@@ -45,4 +45,5 @@ function checkCycle(edges, edge) {
   ///check if can reach the second node from first node another way
   ///check what every node we can reach from this node
   ///for every node check what nodes we can visit
+  ////when this node is single node and not the desired node
 }
