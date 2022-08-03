@@ -58,18 +58,21 @@ var findRedundantConnection = function (edges) {
     let visited = new Set();
     visited.add(edges[edge][0]);
 
-    if (checkCycle(map, edges[edge], visited)) {
+    if (checkCycle(map, ,edges[edge][0],edges[edge][1],edges[edge][1], visited)) {
       ///for each edge check if it is part of cycle return the edge
       return edges[edge];
     }
   }
 };
-function checkCycle(map, edge, visited) {
+function checkCycle(map,node1,node2,current, visited) {
   ///we need to check if we can reach the node2 to node1 from another path(cycle)
   ///for every element of the maping node2 if already visited ignore
-  let elements = map[edge[1]];
+  let elements = map[current];
   for (let element of elements) {
-    if (visited.has(element)) {
+    if (!visited.has(element)) {
+        if(element==node1 && current !=node2){
+            return true;
+        }
     }
   }
   /// if not visited (if equal to node1 [not in the level of node2 first call]  return true)
