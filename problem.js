@@ -55,3 +55,4 @@ let graph = {
   4: [1, 3],
   5: [1],
 };
+///if the current is 5
