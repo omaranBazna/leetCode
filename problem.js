@@ -15,4 +15,19 @@ Output: [2,3]
 Input: edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]
 Output: [1,4]
 
+
+
+
+*/
+/*
+Constraints:
+
+n == edges.length
+3 <= n <= 1000
+edges[i].length == 2
+1 <= ai < bi <= edges.length
+ai != bi
+There are no repeated edges.
+The given graph is connected.
+
 */
