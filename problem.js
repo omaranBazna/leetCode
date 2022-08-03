@@ -41,12 +41,10 @@ var findRedundantConnection = function (edges) {
   ///make a map where every element paired with of array immediate connected nodes
   ///loop from end to start
   ///for each edge check if it is part of cycle return the edge
+  ///for each edge initialize set of already visited nodes and add the node1 to the set
 };
-function checkCycle(map, edge) {
-  ///check if can reach the second node from first node another way
-  ///check what every node we can reach from this node
-  ///for every node check what nodes we can visit
-  ////when this node is single node and not the desired node
+function checkCycle(map, edge, visited) {
+  ///we need to check if we can reach the node2 to node1 from another path(cycle)
 }
 
 let graph = {
