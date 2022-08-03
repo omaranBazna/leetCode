@@ -53,8 +53,10 @@ var findRedundantConnection = function (edges) {
     }
   }
   ///loop from end to start
-  ///for each edge check if it is part of cycle return the edge
-  ///for each edge initialize set of already visited nodes and add the node1 to the set
+  for (let edge = edges.length - 1; edge >= 0; edge--) {
+    ///for each edge check if it is part of cycle return the edge
+    ///for each edge initialize set of already visited nodes and add the node1 to the set
+  }
 };
 function checkCycle(map, edge, visited) {
   ///we need to check if we can reach the node2 to node1 from another path(cycle)
