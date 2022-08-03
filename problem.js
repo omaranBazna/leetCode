@@ -56,3 +56,4 @@ let graph = {
   5: [1],
 };
 ///if the current is 5
+///there is no other node to test //no other path the other node
