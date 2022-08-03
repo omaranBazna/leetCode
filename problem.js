@@ -47,3 +47,11 @@ function checkCycle(edges, edge) {
   ///for every node check what nodes we can visit
   ////when this node is single node and not the desired node
 }
+
+let graph = {
+  1: [2, 4, 5],
+  2: [1, 3],
+  3: [2, 4],
+  4: [1, 3],
+  5: [1],
+};
