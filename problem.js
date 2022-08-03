@@ -60,3 +60,4 @@ let graph = {
 ///if the current is 4
 ///we have potential path at 3
 ///3 have [2,4]
+///4 has been visited ,so it is useful to check what has been visited
